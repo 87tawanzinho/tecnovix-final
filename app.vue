@@ -1,17 +1,23 @@
 <template>
   <div>
     <div class="flex flex-col xl:flex-row justify-between w-full">
-      <FlowSideBar v-if="showComponentFlow" @closing="handleClose" />
+      <FlowSideBar
+        v-if="showComponentFlow"
+        @closing="handleClose"
+        v-motion-fade
+      />
       <Topbar
         @exec="handleClick"
         :show-component-flow="showComponentFlow"
         @closing="handleClose"
+        v-motion-slide-left
       />
     </div>
 
     <PopUpToShowFlowInComputer
       v-if="showComponentFlow"
       @closing="handleClose"
+      v-motion-slide-left
     />
   </div>
 </template>

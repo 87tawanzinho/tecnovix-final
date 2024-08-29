@@ -1,9 +1,10 @@
 <template>
-  <nav class="w-full z-40 bg-white">
+  <nav class="w-full z-40 bg-white" v-motion-slide-left>
     <div
       class="justify-between px-8 text-[#1A202C] font-strong hidden xl:flex"
       :class="{
-        'ml-96': showComponentFlow === true,
+        'ml-96 ': showComponentFlow === true,
+
         'ml-0': showComponentFlow === false,
       }"
     >

@@ -57,7 +57,11 @@
         <ToggleButton type="integrations" @toggle="handleToggle" />
       </div>
       <transition name="slide">
-        <Integrations v-if="showInfoDiv" :key="showInfoDiv" />
+        <Integrations
+          v-if="showInfoDiv"
+          :key="showInfoDiv"
+          v-motion-slide-bottom
+        />
       </transition>
       <div class="flex justify-between items-center mt-8">
         <div class="flex items-center gap-2">

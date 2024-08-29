@@ -2,7 +2,7 @@
   <div
     class="fixed inset-0 bg-black bg-opacity-40 flex justify-center items-center z-20"
   >
-    <div class="bg-white w-7/12 h-1/2 ml-80 p-4 rounded-2xl">
+    <div class="bg-white w-7/12 h-1/2 ml-96 p-4 rounded-2xl">
       <div class="flex justify-between">
         <p class="text-lg font-strong">
           Execuções <span class="text-[#7A828A]">#EM TESTE</span>

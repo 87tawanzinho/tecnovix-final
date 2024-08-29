@@ -6,14 +6,7 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "nuxt-icon",
     "@nuxt/fonts",
-    "@hypernym/nuxt-gsap",
+    "@vueuse/motion/nuxt",
   ],
   css: [`assets/styles/main.css`],
-  gsap: {
-    composables: true,
-    provide: false,
-    extraPlugins: {
-      scrollTrigger: true,
-    },
-  },
 });
