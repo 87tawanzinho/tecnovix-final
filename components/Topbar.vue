@@ -1,7 +1,7 @@
 <template>
   <nav class="w-full z-40 bg-white">
     <div
-      class="justify-between p-4 px-8 text-[#1A202C] font-strong hidden xl:flex"
+      class="justify-between px-8 text-[#1A202C] font-strong hidden xl:flex"
       :class="{
         'ml-96': showComponentFlow === true,
         'ml-0': showComponentFlow === false,
@@ -9,21 +9,21 @@
     >
       <div class="flex gap-4">
         <button
-          class="p-2 w-32 button-menu"
+          class="p-4 w-32 button-menu"
           @click="handleClick('edit')"
           :class="{ 'border-b-2 border-blue-500': selectedTab === 'edit' }"
         >
           Editor
         </button>
         <button
-          class="p-2 w-32 button-menu"
+          class="p-4 w-auto button-menu"
           @click="handleClick('exec')"
-          :class="{ 'border-b-2 border-blue-500': selectedTab === 'exec' }"
+          :class="{ 'border-b-2 border-blue-500 ': selectedTab === 'exec' }"
         >
           Execuções
         </button>
         <button
-          class="p-2 w-32 button-menu"
+          class="p-4 w-auto button-menu"
           @click="handleClick('config')"
           :class="{ 'border-b-2 border-blue-500': selectedTab === 'config' }"
         >

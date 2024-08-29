@@ -21,7 +21,7 @@
 .button-menu:hover {
   opacity: 0.9;
   background: #ececec;
-  transition: ease-in 0.1s;
+  transition: ease-in 0.1ms;
 }
 
 .exec,
