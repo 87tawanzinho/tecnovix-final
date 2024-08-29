@@ -1,9 +1,7 @@
 <template>
   <div>
     <div class="flex flex-col xl:flex-row justify-between w-full">
-      <transition name="bounce" mode="out-in">
-        <FlowSideBar v-if="showComponentFlow" @closing="handleClose" />
-      </transition>
+      <FlowSideBar v-if="showComponentFlow" @closing="handleClose" />
       <Topbar
         @exec="handleClick"
         :show-component-flow="showComponentFlow"
@@ -25,6 +23,7 @@ import FlowSideBar from "./components/FlowSide/FlowSideBar.vue";
 import PopUpToShowFlowInComputer from "./components/ComputerOnly/PopUpToShowFlowInComputer.vue";
 
 const showComponentFlow = ref(false);
+
 function handleClick() {
   showComponentFlow.value = true;
 }

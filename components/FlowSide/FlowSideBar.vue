@@ -1,6 +1,6 @@
 <template>
   <div
-    class="p-4 fixed top-0 left-0 h-full w-full xl:w-[380px] bg-blue-project text-white z-40 overflow-y-auto"
+    class="p-4 fixed top-0 left-0 h-full w-full xl:w-[380px] bg-blue-project text-white z-50 overflow-y-auto"
   >
     <div class="p-6">
       <div class="flex justify-between items-center">

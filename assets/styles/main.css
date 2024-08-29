@@ -27,8 +27,6 @@
 .exec,
 .config,
 .edit {
-  padding-bottom: 4px;
-
   border-bottom: 1px solid var(--background-color-blue);
 }
 

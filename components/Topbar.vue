@@ -1,5 +1,5 @@
 <template>
-  <nav class="w-full">
+  <nav class="w-full z-40 bg-white">
     <div
       class="justify-between p-4 px-8 text-[#1A202C] font-strong hidden xl:flex"
       :class="{
@@ -9,21 +9,21 @@
     >
       <div class="flex gap-4">
         <button
-          class="p-2 w-32 rounded button-menu"
+          class="p-2 w-32 button-menu"
           @click="handleClick('edit')"
           :class="{ 'border-b-2 border-blue-500': selectedTab === 'edit' }"
         >
           Editor
         </button>
         <button
-          class="p-2 w-32 rounded button-menu"
+          class="p-2 w-32 button-menu"
           @click="handleClick('exec')"
           :class="{ 'border-b-2 border-blue-500': selectedTab === 'exec' }"
         >
           Execuções
         </button>
         <button
-          class="p-2 w-32 rounded button-menu"
+          class="p-2 w-32 button-menu"
           @click="handleClick('config')"
           :class="{ 'border-b-2 border-blue-500': selectedTab === 'config' }"
         >
@@ -74,7 +74,9 @@ const props = defineProps({
 });
 
 const emit = defineEmits(["exec", "closing"]);
+
 const selectedTab = ref("");
+
 function handleClick(tab: string) {
   selectedTab.value = tab;
   if (selectedTab.value === "exec") {
