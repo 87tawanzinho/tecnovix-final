@@ -26,7 +26,7 @@
 import { ref } from "vue";
 import Topbar from "./components/Topbar.vue";
 import FlowSideBar from "./components/FlowSide/FlowSideBar.vue";
-import PopUpToShowFlowInComputer from "./components/ComputerOnly/PopUpToShowFlowInComputer.vue";
+import PopUpToShowFlowInComputer from "./components/FlowSide/ComputerOnly/PopUpToShowFlowInComputer.vue";
 
 const showComponentFlow = ref(false);
 
